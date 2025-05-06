@@ -1,0 +1,910 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+/* Add Colors*/
+:root{
+
+    --Green:#13c574;
+    --White:#f6f9f8;
+    --Dark-White:#d1dad6;
+    --Black:#030906;
+    --Gray:#444645;
+    --LightGray : #a2b4ab;
+    --LightGreen : #aefcd5;
+
+}
+
+
+*{
+    font-family: "Rubik", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    text-transform: capitalize;    
+    
+  }
+
+  
+
+body{
+
+    background-color: var(--Gray);
+    margin: 0;
+    padding: 0;
+}
+html{
+
+    font-size: 120%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10px;
+}
+.TopMenu{
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    right:0;
+    top:0;
+  
+}
+
+.Title_Icon{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    margin-bottom: 0.7%;
+    background-color: var(--Green);
+    color: var(--Black);
+    text-align: center;
+    padding:4%;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius: 15px;
+
+}
+
+
+.Title_Icon img {
+    margin-left: 4%;
+    width: 50px;
+    height: 50px;
+}
+
+.TopMenu{
+    display: block;
+    z-index: 1000;
+    justify-content: space-between;
+    border-style: solid;
+    border-radius: 25px;
+    margin:0 auto;
+    text-align: left;
+    align-items: center;
+    
+}
+
+.NavigationBar a{
+    display: inline-block;
+    margin-left:4%;
+    margin-right:4%;
+    color: var(--Dark-White);
+}
+
+::-webkit-scrollbar{
+    height: 7rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--Green);
+    border-radius:5rem;
+}
+
+.NavigationBar{
+    position: relative;
+    background-color: black;
+    padding: 3%;
+}
+
+
+ .NavigationBar  a:hover{
+    color: var(--Green);
+}
+
+#MenuBtn{
+    cursor:pointer;
+    color: var(--White);
+    font-size: medium;
+   
+
+}
+
+.MenuBar{
+    background-color: var(--Black);
+    border-radius: 17px;
+    padding: 2%;
+    display: none;
+}
+
+.welcome{
+    margin-left: 5%;
+    color: var(--White);
+    font-size: 250%;
+    text-align: center;
+
+}
+
+
+
+.Home{
+    display: block;
+}
+
+
+.row1{
+ display: flex;
+ justify-content: space-between;
+ margin-top: 30%;
+
+}
+.contant{
+    display: block;
+    justify-content: center;
+}
+
+
+.edu{
+    margin-top: 8%;
+    margin-left: 2%;
+    text-align: center;
+    color: var(--Green);
+    font-size: 500%;
+    margin-bottom: 30px;
+    
+}
+
+.edu:hover{
+    color: var(--White);
+}
+
+.home_btn1{
+    margin-left: 38%;
+    font-size: 150%;
+    padding: 2%;
+    background-color: var(--White);
+    border-color: black;
+    border-width:16px;
+
+    border-radius: 15px;
+}
+    
+
+.home_btn1:hover{
+    background-color: var(--Green);
+}
+
+.image1{
+    margin-right: 2%;
+    max-width: 45%;
+    max-height: 20%;
+    align-items: center;
+  
+}
+
+
+
+/* Category part Start */
+
+.Category .Box_Content{
+
+    display: flex;
+    gap: 3%;/* Space item*/
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+
+  
+}
+
+ .Category .Box_Content .Box{
+display: block;
+text-align: center;
+background-color: var(--Green);
+padding: 5%;
+border-radius: 35px;
+border-style: solid;
+border-bottom-width: 10px;
+border-bottom-color: var(--Black);
+
+} 
+
+.Category .Box_Content :hover{
+
+    background-color: var(--White);
+    color: var(--Black);
+}
+
+
+.Category .Box_Content .Box i{
+    font-size: 170%;
+}
+
+.Category .Box_Content .Box h3{
+    font-size: 170%;
+}
+
+
+.Category .Box_Content .Box p{
+    font-size: 120%;
+}
+
+/* Category part End */
+
+
+/* About Us Start */
+
+.AboutUsMAin :hover{
+    background-color: var(--Green);
+}
+
+.AboutUs{
+    display:flex;
+    border-style: solid;
+    border-top-width: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-top-color: var(--Black);
+    justify-content: space-between;
+    margin-top: 5%;
+    background-color: var(--Dark-White);
+    border-radius: 20px;
+    
+}
+
+.AboutUsMAin .AboutUs .image2 img{
+    display: flex;
+    margin-top:5%;
+    max-width: 500px;
+    max-height: 300px;
+
+    
+
+}
+
+.AboutUsMAin .AboutUs .About{
+    display: block;
+    margin-top:5%;
+    font-size: 150%;
+    text-decoration: double;
+}
+
+.AboutUsMAin .AboutUs .About b:hover{
+    color: var(--White);
+}
+
+
+.AboutUsMAin .AboutUs .About .btn{
+
+margin-top: 5%;
+align-items: center;
+
+}
+
+.AboutUsMAin .AboutUs .About #aboutbtn{
+margin-left: 27%;
+margin-right: 27%;
+margin-bottom: 5%;
+width: 40%;
+padding: 2%;
+color: var(--White);
+background-color: var(--Black);
+border: solid var(--Gray) ;
+border-radius: 25px;
+font-size: 110%;
+
+}
+
+/* About Us End */
+
+
+/*  Courses Contant Start  */
+
+ .CourTitle{
+
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 2%;
+    color: var(--Green);
+    font-size: 300%;
+
+}
+
+ .CourTitle span{
+
+    color: var(--White);
+}
+
+/* Swiper---------------------------- */
+
+.swiper {
+    display: inline-block;
+      width: 100%;
+      height:fit-content;
+     margin-top: 5%;
+     margin-right: 0.5%;
+     margin-bottom: 10%;
+     justify-content: center;
+     align-items: center;
+    
+    
+    }
+    
+    .CourseCard{
+        display: block;
+        align-items: center;
+        justify-content: center;
+        height: 450px;
+        width: fit-content;
+        background-color: #edf7f2  ;
+        text-align: center;
+        border: solid 4px #aaccbc ;
+        border-radius: 20px;
+       
+    }
+    
+    .CourseCard:hover {
+        background-color: yellow;
+    }
+    
+    .CourseCard img {
+        width: 200px;
+        height: 200px;
+        
+       
+        padding: 1%;
+    
+       
+    }
+    
+    .CourseCard a {
+        text-align: center;
+        background-color: Black;
+        color:  White;
+        border-radius: 18px;
+        padding: 3%;
+        font-size: 120%;
+        text-decoration: none;
+       
+    
+    } 
+    .CourseCard a:hover{
+        background-color: white;
+        color: black;
+    }
+    
+     .CourseCard p {
+        
+        margin-bottom: 10%;
+        text-align: center;
+        color: black;
+        font-size: 250%;
+       
+    
+    }
+    
+    .slideBackground{
+        display: block;
+        background-color: #13c574 ;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        height:230px;
+        border-radius: 20px;
+        border: white 4px solid;
+    
+    
+    } 
+
+/*  Courses Contant end  */
+
+/*Teacher start*/
+
+.wrapper{
+
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.teacher{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    cursor: move;
+    height: 500px;
+    width: 500px;
+    background-color: transparent;
+    text-align: center;
+ 
+    
+   
+}
+
+.teacher .main_T{
+    display: block;
+    width: 400px;
+    height: 400px;
+   
+}
+
+.teacher .main_T img{
+    position: static;
+    width: 400px;
+    height: 400px;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+.teacher .main_T p{
+    text-align:center;
+    font-size: 150%;
+    color: white;
+  
+}
+
+.teacher .main_T .Share{
+
+   position:absolute;
+    font-size: 200%;
+    justify-content: space-between;
+    bottom: -380px;
+    margin-left: 8%;
+    transition: bottom 1s ease;
+}
+.teacher .main_T .Share i{
+    display:block;
+    font-size: 100%;
+    margin-top: 75%;
+    margin-left: 0px;
+    color: black;
+    background-color: white;
+    border: 10px white solid;
+    border-radius: 20px;
+
+    
+  
+
+
+}
+.teacher .main_T .Share i:hover{
+    background-color: var(--Green);
+    border: 10px var(--Green) solid;
+}
+
+.teacher .main_T:hover .Share{
+    display: block;
+    bottom: 15%;
+
+}
+
+/*Teacher End*/
+
+
+/* Review Start*/
+
+.StudentsReviews{
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.Review{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--Green);
+  border-radius: 20px;
+  width: 30%;
+  height: 350px;
+  cursor: move;
+
+}
+
+.ReviewTitle span{
+    color: var(--White);
+}
+.ReviewTitle{
+    color: var(--Green);
+    font-size: 300%;
+}
+
+.ReviewStar i{
+    display: inline;
+    color: yellow;
+}
+
+.ReviewContent{
+    margin-top: 10%;
+    text-align: center;
+    text-transform: capitalize;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.wrapperReview :hover{
+
+    background-color: var(--White);
+}
+
+/* Review End*/
+
+
+
+
+
+/* contact */
+
+
+.register{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding: 3%;
+    width: 90%;
+    height: fit-content;
+    background-color: var(--LightGray);
+   margin: 5%;
+   border-radius: 20px;
+}
+.register:hover{
+    background-color: var(--Green);
+}
+
+
+.Rimage img{
+    
+    width: 35%;
+    height: 35%;
+    margin: 5%;
+}
+
+
+
+
+
+.RegisterText{
+  display: block;
+  text-align: left;
+  margin-top: 3%;
+    font-size: 160%;
+    
+
+}
+
+.RegisterRow{
+    margin-top: 1%;
+    width: 500px;
+    height: 60px;
+    border-radius: 20px;
+}
+
+
+
+.RSelect{
+    margin-top: 4%;
+    width: 500px;
+    height: 60px;
+    border-radius: 20px; 
+}
+.radio{
+    font-size: 120%;
+    margin-top: 4%;
+}
+
+.Rsubmit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.Rsubmit .submit{
+    font-size: 160%;
+    width: 30%;
+    border-radius: 10px;
+    border: black solid 3px;
+    text-transform: uppercase;
+}
+
+
+/* contact */
+
+
+/*Footer*/
+
+.FooterShare{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.FooterShare i{
+    margin-left: 4%;
+    font-size: 100%;
+    color: black;
+    background-color: white;
+    border: 10px white solid;
+    border-radius: 20px;
+     
+}
+.FooterShare i:hover{
+    background-color: var(--Green);
+    border: 10px var(--Green) solid;
+}
+
+.credit{
+   margin-top: 3%;
+   font-size: 100%;
+   color: var(--White);
+   text-align: center; 
+}
+
+/*Footer*/
+
+/* items(text size, nav bar , menu..etc) change device size  */
+
+@media(max-width:991px){
+
+    html{
+
+        font-size: 118%;
+    
+       }
+}
+
+
+@media(max-width:1024px){
+
+    .MenuBar{
+        display: flex;
+    }
+
+    #MenuBtn{
+   display: inline-block;
+   color: var(--White);
+   margin-left: 5px;
+   font-size: 150%;
+
+       }
+
+    .NavigationBar a{
+        display: block;
+        margin-top:6%;
+        margin-bottom:6%;
+        color: var(--Dark-White);
+    }
+
+
+/* Menu animation */
+
+
+.NavigationBar{
+        background-color: var(--Black);
+        margin-left: 0;
+        max-width: 80%;
+        font-size: 150%;
+        border-radius: 20px;
+        border-color: var(--Gray);
+        clip-path: polygon(0 2%, 100% 0, 100% 0, 0 2%);
+
+       
+}
+
+
+
+.NavigationBar.AndroidBoy_active{
+    clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 100%);
+    
+    
+
+}
+
+/*-------------------------------------------------------------------------*/
+
+
+/*Home..............*/
+
+.Home .contant{
+
+    display :block;
+    justify-content :center;
+    align-items: center;
+}
+
+
+
+.edu{
+    
+    
+    color: var(--Green);
+    font-size: 400%;
+    margin-bottom: 30px;
+    
+}
+
+.home_btn1{
+    
+    font-size: 200%;
+    padding: 2%;
+    border-radius: 15px;
+    margin-left: 25%;
+    
+    
+    
+
+}
+
+.image1{
+   
+    max-width: 35%;
+    max-height: 15%;
+    margin-right: 10%;
+    
+  
+}
+
+/*....................*/
+
+/* Category part start */
+
+.Category .Box_Content{
+    margin-top: 5%;
+    display: block;
+  
+}
+
+.Category .Box_Content .Box{
+    display: block;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+.Category .Box_Content .Box i{ 
+
+    font-size: 350%;
+}
+.Category .Box_Content .Box h3{ 
+
+    font-size: 250%;
+}
+.Category .Box_Content .Box p{ 
+
+    font-size: 200%;
+}
+
+/* Category part End */
+
+
+
+/* About Us Start */
+.AboutUs{
+    display: block;
+}
+
+.AboutUsMAin .AboutUs .About{
+    text-align: center;
+    font-size: 120%;
+    
+}
+
+.AboutUsMAin .AboutUs .image2 {
+
+    display: flex;
+    justify-content: center;
+   
+   
+   
+
+}
+/* About Us End */
+
+.register{
+    display: table;
+    
+}
+
+.Rimage{
+   display: none;
+   
+}
+
+.RegisterRow{
+    margin-left: 15%;
+    width: 300px;
+    height: 60px;
+    
+}
+
+.RegisterText{
+margin-left: 15%;  
+}
+
+.RSelect{
+    margin-left: 15%;
+    width: 300px;
+    height: 60px;
+}
+
+.radio{
+    margin-left: 15%;
+}
+
+
+/* contact */
+
+
+
+/* contact */
+
+/* Swiper course Start---------------------------- */
+
+/* Swiper courses End---------------------------- */
+
+
+
+
+
+}
+
+
+@media(max-width:650px){
+
+    html{
+
+        font-size: 100%;
+    
+       }
+
+       .swiper-slide p {
+        font-size: 150%;
+    }
+    .slideBackground{
+        height:155px;  
+    }
+
+    .CourseCard {
+
+        height: 340px;
+    
+    }
+
+    .CourseCard a {
+        font-size: 150%;
+        
+    }
+    
+
+    
+.CourseCard img {
+    width: 120px;
+    height: 150px;
+    padding: 1%;
+  
+}
+
+
+.wrapper{
+
+    margin-left: 10%;
+    margin-right: 3%;
+}
+
+
+}
+
