@@ -1,0 +1,5 @@
+icon link :- https://cdnjs.com/libraries/font-awesome
+
+Text font :- https://fonts.google.com/specimen/Nunito
+
+Clip path :- https://bennettfeely.com/clippy/
