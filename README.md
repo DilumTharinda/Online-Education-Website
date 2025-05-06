@@ -17,5 +17,5 @@ A simple educational web project that includes an HTML page, CSS styling, and Ja
 ## 🚀 How to Run
 
 1. Download or clone the repository:
-
+https://github.com/DilumTharinda/Online-Education-Website.git
   
